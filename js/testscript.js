@@ -6,17 +6,18 @@
 
 $(Document).ready(function(){
 $.ajax
-type: POST,
-url: "https://www.matchapi.halberdtechnologies.com",
-success: function(userID)
+type: "GET",
+string baseurl = "https://matchapi.halberdtechnologies.com/api";
+mode="todatabase"
+success: function(33)
   error: function(jqXHR, textStatus, errorThrown) {
-    alert("Error");
+    alert('Error');
     }
   });
 } 
 
 $.ajax
-type: POST,
+type:"POST",
 url: "https://www.matchapi.halberdtechnologies.com",
 success: function(currentDB)
   error: function(jqXHR, textStatus, errorThrown) {
@@ -26,7 +27,7 @@ success: function(currentDB)
 } 
 
 $.ajax
-type: POST,
+type: "POST",
 url: "https://www.matchapi.halberdtechnologies.com",
 success: function(mode)
   for (var i = 0; i < mode.length; i++) {
