@@ -7,9 +7,11 @@
 $(Document).ready(function(){
 $.ajax
 type: "GET",
-string baseurl = "https://matchapi.halberdtechnologies.com/api";
-mode="todatabase"
-success: function(33)
+//stringBaseurl = "https://matchapi.halberdtechnologies.com/api";
+//var userId = "f6cd6592-f61e-40b2-afcc-c38827f075df";
+//var command = stringBaseurl + "/database?userID=" + userID;
+url: "https://matchapi.halberdtechnologies.com/api/database?userID=f6cd6592-f61e-40b2-afcc-c38827f075df",
+success: function(f6cd6592-f61e-40b2-afcc-c38827f075df)
   error: function(jqXHR, textStatus, errorThrown) {
     alert('Error');
     }
