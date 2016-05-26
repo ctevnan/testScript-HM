@@ -2,7 +2,7 @@
 //include creation of (POST) user profile/db of 4 images
 //then do a verification call (/v)
 //the trigger command is match
-//api endpoint https://matchapi.halberdtechnologies.com
+//api endpoint https://matchapi.halberdtechnologies.com/api
 //ajax url specifies endpoint to hit, can be any CORS(cross origin resource sharing) enabled endpoint
 //get retrieves data from endpoint
 //post creates data
@@ -12,7 +12,7 @@
 $(document).ready(function(){
   $.ajax ({
     type: "GET", //retrieves data 
-    url: "https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}", //api endpoint to hit
+    URL: "https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}", //api endpoint to hit
     success: function(data, textStatus, jqXHR){  //this function is called when the GET request is successful
     console.log(data);  //data contains the response from the server
     console.log(textStatus); //returns the status of the request in words
@@ -24,9 +24,6 @@ $(document).ready(function(){
     console.log(errorThrown);  //returns an error object
   }  
 });
-
-
- 
 
 $.ajax ({
   type:"POST",
@@ -42,17 +39,3 @@ $.ajax ({
   console.log(errorThrown);
 } 
 
-//$.ajax
-//type: "POST",
-//url: "https://www.matchapi.halberdtechnologies.com",
-//success: function(mode)
-//  for (var i = 0; i < mode.length; i++) {
-//          var newListItem = buildListGroup([i]);
-//          $(".list-group").append(newListItem);
-//        }
-//      },
-//      error: function(jqXHR, textStatus, errorThrown) {
-//        alert("Error");
-//      }
-//  });
-//} 
