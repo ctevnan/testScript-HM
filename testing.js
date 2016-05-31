@@ -9,12 +9,21 @@
 //put updates data
 //delete deletes data
 
+//begin test suite with Jasmine
+
+describe("An ajax call", function() {
+  it("contains a GET call", function() {
+    expect(true).toBe(true);
+  });
+});
+
+
 $(document).ready(function(){
   $.ajax ({
     type: "GET", //retrieves data 
     url: "https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}", //api endpoint to hit
     success: function(data, textStatus, jqXHR){  //this function is called when the GET request is successful
-    console.log('data');  //data contains the response from the server
+    console.log("data");  //data contains the response from the server
     console.log(textStatus); //returns the status of the request in words
     console.log(jqXHR);  //returns the raw XMLhttpRequest object
   },  
