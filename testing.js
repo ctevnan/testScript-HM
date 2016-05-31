@@ -28,6 +28,20 @@ describe("An ajax call is just a function", function(){
   });
 });
 
+describe("The GET call will return json data", function() {
+
+  it("hits the url: https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}", function() {
+    expect(true).toBe(true);
+  });
+});
+
+describe("The GET call will return json data", function() {
+
+  it("can have a negative case", function() {
+    expect(false).not.toBe(true);
+  });
+});
+
 
 $(document).ready(function(){
   $.ajax ({
