@@ -10,10 +10,21 @@
 //delete deletes data
 
 //begin test suite with Jasmine
+//cover all edge cases
 
 describe("An ajax call", function() {
   it("contains a GET call", function() {
     expect(true).toBe(true);
+  });
+});
+
+describe("An ajax call is just a function", function(){
+  var a;
+
+  it("and so is a GET call", function() {
+    a = true;
+
+    expect(a).toBe(true);
   });
 });
 
