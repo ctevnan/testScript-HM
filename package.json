@@ -1,0 +1,19 @@
+{
+  "name": "testscript",
+  "version": "1.0.0",
+  "description": "testing HM cloud server api calls",
+  "main": "buildlistgroup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctevnan/testScript-HM.git"
+  },
+  "author": "Ctevnan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctevnan/testScript-HM/issues"
+  },
+  "homepage": "https://github.com/ctevnan/testScript-HM#readme"
+}

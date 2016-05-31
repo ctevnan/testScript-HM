@@ -1,4 +1,4 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
   $(".list-group").on("click", "a", function(e) {
     e.preventDefault();
     
@@ -16,7 +16,7 @@
 
   function buildTableRow(photoData) {
     //var photoTd = $("<td>").append(commitData. (enter params) );
-    var userIDTd = $("<td>").append(commitData. (enter params here)   );
+    var userIDTd = $("<td>").append(commitData.   );
     //var dateTd = $("<td>").append(commitData.commit.author.date);
 
     return $("<tr>").append(   Td)

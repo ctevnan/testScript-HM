@@ -12,8 +12,8 @@
 //begin test suite with Jasmine
 //cover all edge cases
 
-describe("An ajax call", function() {
-  it("contains a GET call", function() {
+/*describe("Ajax call", function() {
+  it("should return json data", function() {
     expect(true).toBe(true);
   });
 });
@@ -40,7 +40,7 @@ describe("The GET call will return json data", function() {
   it("can have a negative case", function() {
     expect(false).not.toBe(true);
   });
-});
+});*/
 
 
 $(document).ready(function(){
