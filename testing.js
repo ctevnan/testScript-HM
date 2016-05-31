@@ -12,9 +12,9 @@
 $(document).ready(function(){
   $.ajax ({
     type: "GET", //retrieves data 
-    URL: "https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}", //api endpoint to hit
+    url: "https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}", //api endpoint to hit
     success: function(data, textStatus, jqXHR){  //this function is called when the GET request is successful
-    console.log(data);  //data contains the response from the server
+    console.log('data');  //data contains the response from the server
     console.log(textStatus); //returns the status of the request in words
     console.log(jqXHR);  //returns the raw XMLhttpRequest object
   },  
@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 $.ajax ({
   type:"POST",
-  url: "https://www.matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}&database={testdb}",
+  url: "https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}&database={testdb}",
   success: function(data, textStatus, jqXHR){
   console.log(data);
   console.log(textStatus);
@@ -37,5 +37,5 @@ $.ajax ({
   console.log(jqXHR);
   console.log(textStatus);
   console.log(errorThrown);
-} 
+}; 
 
