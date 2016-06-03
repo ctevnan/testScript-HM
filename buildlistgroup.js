@@ -13,7 +13,7 @@ $(document).ready(function() {
         console.log(response);
         var geoLocation = response.results[0].geometry.location;
         console.log(geoLocation);
-        var halberdApiUrl = "https://matchapi.halberdtechnologies.com/api/Database?userID={f6cd6592-f61e-40b2-afcc-c38827f075df}";
+        var halberdApiUrl = "https://matchapi.halberdtechnologies.com/api/Database?userID=f6cd6592-f61e-40b2-afcc-c38827f075df";
         var halberdApiParams = {
           format: "json",
           lat: geoLocation.lat,
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         $.ajax({
           type: "GET",
-          url: halberdApiUrl + $.param(halberdApiParams);
+          url: halberdApiUrl + $.param(halberdApiParams)
           success: function(response) {
             console.log(response);
             var localPhotos = response.photos.photo;
