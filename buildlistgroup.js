@@ -24,25 +24,14 @@ $(document).ready(function() {
           type: "GET",
           url: halberdApiUrl + $.param(halberdApiParams);
           success: function(response) {
+            console.log(response);
             var localPhotos = response.photos.photo;
             for(var i = 0; i < localPhotos.length; i++) {
               var newCol = buildThumbnail(localPhotos[i]);
               $("#photosRow").append(newCol);
             }
           }
-        })
-      })
-    })  
-  });
-  
-
- /* function buildTableRow(photoData) {
-    //var photoTd = $("<td>").append(commitData. (enter params) );
-    var userIDTd = $("<td>").append(commitData.);
-    //var dateTd = $("<td>").append(commitData.commit.author.date);
-
-    return $("<tr>").append(   Td)
-      .append(     Td)
-      .append(    Td);
-  } */
-// });
+        });
+      }
+    });  
+  }); 
